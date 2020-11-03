@@ -23,7 +23,7 @@ main {
 }
 
 header {
-    background-color: white;
+    background-color: #505050;
     position: fixed;
     top: 0;
     left: 0;
@@ -56,10 +56,12 @@ div::before {
 
 .information {
 	font-size: large;
-	background-color: white;
+	background-color: #F5F5F5;
   	align-items: center;
   	border: 1px solid black;
-  	content: " "; 
+  	content: " ";
+  	padding-left: 15px;
+  	padding-right:15px;
   	margin-bottom: 50px;
 }
 
