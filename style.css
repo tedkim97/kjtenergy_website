@@ -12,7 +12,6 @@ header img {
 body {
     height: 125vh;
     background-image: url('assets/solar.jpg');
-    /*background-image: url('https://www.williams.com/wp-content/uploads/sites/6/2020/05/solar-image-header.jpeg');*/
     background-size: cover;
     font-family: sans-serif;
     margin-top: 80px;
@@ -50,6 +49,7 @@ header li a {
 }
 
 div::before { 
+  margin-top: -250px;
   visibility: hidden; 
   pointer-events: none;
 }
@@ -60,7 +60,23 @@ div::before {
   	align-items: center;
   	border: 1px solid black;
   	content: " "; 
-  	padding: 15px;
+  	margin-bottom: 50px;
+}
 
-  	margin: 30px;
+#about {
+	height: 200px;
+	display: inline-block;
+	width: 100%;
+}
+
+#consulting {
+	height: 300px;
+	display: inline-block;
+	width: 100%;
+}
+
+#contact {
+	height: 700px;
+	display: inline-block;
+	width: 100%;
 }
