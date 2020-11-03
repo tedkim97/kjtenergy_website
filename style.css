@@ -48,11 +48,11 @@ header li a {
 	font-weight: bold;
 }
 
-div::before { 
-  margin-top: -250px;
+/*div::before { 
+  
   visibility: hidden; 
   pointer-events: none;
-}
+}*/
 
 .information {
 	font-size: large;
