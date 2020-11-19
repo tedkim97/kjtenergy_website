@@ -4,34 +4,37 @@
 	}
 }
 
-header img {
-    height: 80px;
-    margin-left: 40px;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    height: 125vh;
-    background-image: url('assets/solar.jpg');
-    background-size: cover;
-    font-family: sans-serif;
-    margin-top: 80px;
-    padding: 30px;
+  display: grid;
+  font-family: Verdana, Geneva;
+  margin: 0px;
 }
 
 main {
-    color: black;
+  color: black;
 }
 
 header {
-    background-color: #505050;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 25px 0 black;
+  background-color: #FFFFFF;
+  position: fixed;
+  display: grid;
+  grid-template-columns: minmax(100px, 80%) auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  align-items: center;
+  z-index: 2;
+  /*box-shadow: 0 0 10px 0 black;*/
+}
+
+header img {
+  height: 80px;
+  /*margin-left: 40px;*/
 }
 
 header * {
@@ -48,37 +51,94 @@ header li a {
 	font-weight: bold;
 }
 
-/*div::before { 
-  
-  visibility: hidden; 
-  pointer-events: none;
-}*/
+header li a:hover {
+  color: blue;
+}
+
+.firmpage {
+  background-image: url('assets/solar.jpg');
+  display: grid;
+  grid-template-columns: minmax(200px, 50%) auto;
+  font-size: large;
+  background-color: #F5F5F5;
+  min-height: calc(100vh - 80px);
+  max-height: calc(100vh - 80px);
+  width: 100%;
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+  margin-top: 80px
+}
+
+.firmpage .titlepane_transparent{
+  background: rgba(48, 48, 48, 0.9);
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  justify-content: right;
+}
+
+.firmpage .titlepane_transparent .titletext { 
+  position:absolute;
+  top:50%;
+  transform: translate(0, -50%);
+  overflow-wrap: inherit;
+}
 
 .information {
+  display: grid;
+  grid-template-columns: minmax(150px, 35%) auto;
 	font-size: large;
-	background-color: #F5F5F5;
-  	align-items: center;
-  	border: 1px solid black;
-  	content: " ";
-  	padding-left: 15px;
-  	padding-right:15px;
-  	margin-bottom: 50px;
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  max-width: 100%;
+	padding: 0px;
+  margin: 0px;
+  left: 0px;
+  padding-top: 80px;
+  margin-top: -80px;
+	/*margin-top: 80px*/
 }
 
-#about {
-	height: 200px;
-	display: inline-block;
-	width: 100%;
+.information .titlepane {
+  z-index: 0;
+  font-size: 2rem;
+  padding: 5rem;
+  color: white;
+  text-align: right;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 
-#consulting {
-	height: 350px;
-	display: inline-block;
-	width: 100%;
+.information .contentpane {
+  z-index: -2;
+  padding: 3rem;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#contact {
-	height: 150px;
-	display: inline-block;
-	width: 100%;
+/*.information .contentpane ul {
+  -moz-column-count: 2;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 10px;
+  column-count: 2;
+  column-gap: 10px;
+}*/
+
+
+.information li {
+  list-style-type: square;
+}
+
+.information li::marker {
+  color: rgb(46, 175, 125);
+}
+
+footer {
+  text-align: center;
 }
