@@ -73,10 +73,12 @@ header li a:hover {
 
 .firmpage .titlepane_transparent{
   background: rgba(48, 48, 48, 0.9);
+  display:flex;
   font-size: 2rem;
   padding: 1rem;
+  text-align: center;
   color: white;
-  justify-content: right;
+  justify-content: center;
 }
 
 .firmpage .titlepane_transparent .titletext { 
@@ -104,9 +106,9 @@ header li a:hover {
 .information .titlepane {
   z-index: 0;
   font-size: 2rem;
-  padding: 5rem;
+  padding: 2rem;
   color: white;
-  text-align: right;
+  text-align: center;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -120,16 +122,6 @@ header li a:hover {
   flex-direction: column;
   justify-content: center;
 }
-
-/*.information .contentpane ul {
-  -moz-column-count: 2;
-  -moz-column-gap: 10px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
-  column-count: 2;
-  column-gap: 10px;
-}*/
-
 
 .information li {
   list-style-type: square;
