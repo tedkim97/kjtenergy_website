@@ -123,6 +123,14 @@ header li a:hover {
   justify-content: center;
 }
 
+.information .contentpane figure {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 500px;
+  height: auto;
+}
+
 .information li {
   list-style-type: square;
 }
