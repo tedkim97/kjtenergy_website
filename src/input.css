@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  font-family: Verdana, Geneva;
+  margin: 0px;
+}
+
+main {
+  color: black;
+}
+
+.firmpage {
+  background-image: url('assets/solar.jpg');
+  display: grid;
+  grid-template-columns: minmax(200px, 50%) auto;
+  font-size: large;
+  background-color: #F5F5F5;
+  min-height: calc(100vh - 80px);
+  max-height: calc(100vh - 80px);
+  width: 100%;
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+}
+
+.firmpage .titlepane_transparent{
+  display:flex;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  justify-content: center;
+}
+
+.firmpage .titlepane_transparent .titletext { 
+  position:absolute;
+  top:50%;
+  transform: translate(0, -50%);
+  overflow-wrap: inherit;
+  padding: 1rem;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: minmax(150px, 35%) auto;
+	font-size: large;
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  max-width: 100%;
+	padding: 0px;
+  margin: 0px;
+  left: 0px;
+  padding-top: 80px;
+  margin-top: -80px;
+	/*margin-top: 80px*/
+}
+
+.information .titlepane {
+  z-index: 0;
+  font-size: 2rem;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.information .contentpane {
+  z-index: -2;
+  padding: 3rem;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information .contentpane figure {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 500px;
+  height: auto;
+}
+
+.information li {
+  list-style-type: square;
+}
+
+.information li::marker {
+  color: rgb(46, 175, 125);
+}

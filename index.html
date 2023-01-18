@@ -1,38 +1,63 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <title>KJT Energy</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="icon" href="data:,">
+  </head>
   <body>
 
-  <header>
-    <a href="#"><img src="assets/logo.png"></a>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#consulting">Consulting</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+
+  <nav class="sticky top-0 flex items-center justify-between flex-wrap bg-zinc-800 p-3 z-20">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <a href="#">
+        <img src="assets/logo.png" class="object-fill h-20">
+      </a>
+    </div>
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-black border-teal-400 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-50 hover:text-black mr-4">
+          About
+        </a>
+        <a href="#consulting" class="block mt-4 lg:inline-block lg:mt-0 text-gray-50 hover:text-black mr-4">
+          Consulting
+        </a>
+        <a href= "#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-50 hover:text-black mr-4">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
 
   <div id="description" class="firmpage">
-    <div class="titlepane_transparent">
+    <div class="titlepane_transparent" style="background:rgba(146, 189, 163, 0.9)">
       <div class="titletext">
-        <p>ENERGY CONSULTING</p>
-        <p>Specializing in solar energy and end of life PV modules</p>
+        <p>Energy Consulting</p>
+        <br></br>
+        <p>Specializing in carbon neutral power generation designs, recycling and repowering of end-of-live PV power plants, and consulting PV + BESS projects</p>
       </div>
     </div>
   </div>
 
   <div id="about" class="information">
-    <div class="titlepane" style="background:rgb(68, 147, 66)">
+    <div class="titlepane" style="background:#3A506B">
       <div class="titletext">
-        <p>ABOUT</p>
+        <p>About</p>
       </div>
     </div>
-    <div class="contentpane" style="background:rgb(255, 255, 255)">
-      Dr. Taesung Kim, CEO and founder of KJT Renewable LLC, has extensive career experience in all aspects of engineering from research to six sigma level quality manufacturing and has 32 years of industrial experience including executive leadership. His career began in Semiconductors, and then Optoelectronic Semiconductors including LED, LD, and Solar cells. In the past 18 years, he has actively led businesses in executing design, EPC, operation, and six sigma level quality control, worldwide marketing, and outsourcing of critical technologies through forming strategic alliances in the renewable energy industry, including Solar PV and Wind energy. In addition to his project experience below, he has collaborated and researched the potential launch of a digital cryptocurrency for renewable energy power projects.
+    <div class="contentpane" style="bg-white">
+      The CEO, Dr.Taesung Kim, has extensive career experience in all aspects of engineering from research to six sigma level quality manufacturing and has 32 years of industrial experience including executive leadership. His career began in Semiconductors, and then Optoelectronic Semiconductors including LED, LD, and Solar cells. In the past 18 years, he has actively led businesses in executing design, EPC, operation, and six sigma level quality control, worldwide marketing, and outsourcing of critical technologies through forming strategic alliances in the renewable energy industry, including Solar PV and Wind energy. In addition to his project experience below, he has collaborated and researched the potential launch of a digital cryptocurrency for renewable energy power projects.
 
       <br><br>
       <b>Project Experience:</b>
@@ -41,21 +66,19 @@ f<!DOCTYPE html>
       <br><br>
       <b>Patent Pending:</b>
       <ul>
-        <li>Eleutheria (Freedom), Digital Cryptocurrency for Virtual Electricity Trading Platform</li>
         <li>Recycling method and system for end-of-life PV modules and the like</li>
         <li>Innovative Composite Encapsulant for 50+ years performance lifetime PV module</li>
       <ul>
     </div>
   </div>
  
-
   <div id="consulting" class="information">
-    <div class="titlepane" style="background:rgb(46, 175, 125)">
+    <div class="titlepane" style="background:#02353c">
       <div class="titletext">
-        <p>CONSULTING</p>
+        <p>Consulting</p>
       </div> 
     </div>
-    <div class="contentpane" style="background:rgb(255, 255, 255)">
+    <div class="contentpane" class="bg-white">
       We specialize in Mid to Utility scale solar PV power plants. Our consulting includes several aspects of a project such as:
       <ul>
         <li>Site Surveys &amp; Acquisitions</li>
@@ -71,13 +94,13 @@ f<!DOCTYPE html>
     </div>
   </div>
 
-  <div id="contact" class="information">
-    <div class="titlepane" style="background:rgb(2, 53, 60)">
-        <p>CONTACT US</p>
+  <div id="contact" class="information text-center">
+    <div class="titlepane" style="background:#8F754F">
+        <p>Contact Us</p>
     </div>
-    <div class="contentpane" style="background:rgb(255, 255, 255); text-align:center">
+    <div class="contentpane" class="bg-white">
       <figure>
-        <img src=assets/taesung.png alt="Dr.Taesung Kim">
+        <img src=assets/taesung.png alt="Dr.Taesung Kim" style="margin:0 auto">
         <figcaption>Taesung Kim, PhD.</figcaption>
         <figcaption>Renewable Energy Consultant</figcaption>
       </figure>
@@ -85,8 +108,8 @@ f<!DOCTYPE html>
     </div>
   </div>
 
-  <footer>
-    <p>© 2020 by KJT Energy LLC</p>
+  <footer class="text-center bg-zinc-800">
+    <p class="text-white">© 2023 by KJT Energy LLC</p>
   </footer>
 
   </body>
