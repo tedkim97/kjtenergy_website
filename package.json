@@ -1,0 +1,24 @@
+{
+  "name": "kjt_website",
+  "version": "1.0.0",
+  "description": "Taesung Kim's website",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedkim97/kjtenergy_website.git"
+  },
+  "author": "tedkim97",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tedkim97/kjtenergy_website/issues"
+  },
+  "homepage": "https://github.com/tedkim97/kjtenergy_website#readme"
+}
